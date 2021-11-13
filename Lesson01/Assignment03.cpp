@@ -10,7 +10,7 @@ int main()
     Use cin and cout.
     */
 
-    double x;
+    double x;   ////double x, y;
     double y;
 
     cin >> x;
