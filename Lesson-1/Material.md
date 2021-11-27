@@ -66,7 +66,7 @@ double - рационално число - 8 bytes
 #### 5.9.4) bool - булева променлива - 1 byte
 #### 5.9.5) Data type link : https://www.geeksforgeeks.org/c-data-types/
 
-```
+```cpp
 #include <iostream> //STL - Standard Library
 //iostream - input/output stream
 using namespace std;
@@ -82,7 +82,7 @@ int main()
 }
 ```
 
-```
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -98,7 +98,7 @@ int main()
 }
 ```
 
-```
+```cpp
 //Data Types example
 #include <iostream>
 using namespace std;
@@ -123,7 +123,7 @@ int main()
 ```
 
 
-```
+```cpp
 //Quick Arithmetic tasks
 #include <iostream>
 using namespace std;
