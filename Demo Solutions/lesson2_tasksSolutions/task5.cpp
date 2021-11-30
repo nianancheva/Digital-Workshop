@@ -9,8 +9,6 @@ int main() {
 
 	cin >> hours >> minutes;
 
-	int diff = 0;
-
 	int h = (minutes + minutesToAdd) / 60;
 	int m = (minutes + minutesToAdd) % 60;
 
