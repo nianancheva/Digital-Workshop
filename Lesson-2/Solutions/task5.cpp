@@ -24,11 +24,13 @@ int main() {
 	//--------------
 
 	if (hours < 10) {
-		cout << 0 << hours << ":";
+		cout << 0 << hours;
 	}
 	else {
-		cout << hours << ":";
+		cout << hours;
 	}
+	
+	cout << ":";
 
 	if (minutes < 10) {
 		cout << 0 << minutes;
