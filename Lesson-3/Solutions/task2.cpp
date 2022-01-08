@@ -6,7 +6,7 @@ int main() {
 	cin >> a >> b;
 
 	int c;
-	if (a >= b) {
+	if (a <= b) {
 		c = a;
 	}
 	else {
