@@ -1,38 +1,44 @@
 #include <iostream>
 using namespace std;
-int main() {
 
-	//btw not a good solution (:
+int main()
+{
+	int num1, num2;
+	cin >> num1 >> num2;
 
-	int a, b;
-	cin >> a >> b;
-
-	int n1, n2;
-	if (a < b) {
-		n1 = a;
-		n2 = b;
-	}
-	else {
-		n1 = b;
-		n2 = a;
-
+	if (num1 < 1 || num2 < 1)
+	{
+		cout << "Error" << endl;
+		return 0; //end program
 	}
 
-	for (int i = n1; i <= n2; i++) {
-		bool isPrime = true;
-		if (i == 1) {
-			isPrime = false;
+	if (num1 > num2) //swap
+	{
+		int temp = num1;
+		num1 = num2;
+		num2 = temp;
+	}
+
+	//if (num1 == 1)
+	//	num1++;
+
+	for (int i = num1; i <= num2; i++)
+	{
+		if (i == 1)
 			continue;
-		}
-		for (int j = 1; j < i; j++) {
-			if ((i % j == 0) && (j != i) && (j != 1)) {
+
+		bool isPrime = true;
+
+		for (int j = 2; j <= i / 2; j++)
+		{
+			if (i % j == 0)
+			{
 				isPrime = false;
 				break;
 			}
 		}
-		if (isPrime) {
-			cout << i << " ";
-		}
-	}
 
+		if (isPrime)
+			cout << i << " ";
 	}
+}

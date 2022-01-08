@@ -1,22 +1,22 @@
 #include <iostream>
 using namespace std;
-int main() {
 
-	int a, b;
-	cin >> a >> b;
+const int lastDivisor = 1;
 
-	int c;
-	if (a >= b) {
-		c = a;
-	}
-	else {
-		c = b;
-	}
+int main()
+{
+	int num1, num2;
+	cin >> num1 >> num2;
 
-	for (int i = c; i >= 1; i--) {
-		if ((a % i == 0) && (b % i == 0)) {
-			cout << i<< " ";
-		}
-	}
+	int smallerValue = num1;
 
+	if (num1 > num2)
+		smallerValue = num2;
+
+	for (int i = smallerValue; i > 1; i--)
+	{
+		if (num1 % i == 0 && num2 % i == 0)
+			cout << i << " ";
 	}
+	cout << lastDivisor;
+}

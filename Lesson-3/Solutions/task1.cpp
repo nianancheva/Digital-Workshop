@@ -1,17 +1,15 @@
 #include <iostream>
 using namespace std;
-int main() {
 
-	int sum = 0;
+int main()
+{
+long long number, sum = 0;
 
-	while (true) {
-		int num;
-		cin >> num;
-		if (num == 0) {
-			cout << sum;
-			break;
-		}
-		sum += num;
-	}
+do
+{
+	cin >> number;
+	sum += number;
+}while(number != 0);
 
-	}
+cout << "Sum is: " << sum << endl;
+}
