@@ -40,10 +40,13 @@ int main() {
 		int nR = numR % 10;
 
 		if (nL == nR) {
-			cout << 0;
+			numL = numL - nL * pL;
+			numR = numR / 10;
+			pL /= 10;
+			continue;
 		}
 
-		if (i == numberOfDigits / 2 - 1) {
+		if (i == numberOfDigits / 2 - 1 && numberOfDigits % 2 == 0) {
 			cout << greaterNumber(nL, nR);
 		}
 		else { cout << greaterNumber(nL, nR)<< " "; }
@@ -59,7 +62,7 @@ int main() {
 				cout << numR % 10;
 		}
 		else {
-			cout << " " << numR % 10;
+			cout << numR % 10;
 		}
 	}
 
