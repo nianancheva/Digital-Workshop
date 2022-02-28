@@ -1,20 +1,17 @@
 #include <iostream>
 using namespace std;
 
-bool isNatural(double n) {
-	long long natural = n;
-	return n == natural;
+bool isNatural(long long n) {
+	return n >= 1;
 }
 
 int main() {
 
-	double input;
+	long long input;
 	cin >> input;
 
-	long long number = input;
-	
 	if (!isNatural(input)) {
-			cout << "Number must be natural!";
+			cout << "Error! Number must be natural!\n";
 			return 0;
 		}
 
